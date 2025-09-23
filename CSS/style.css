@@ -1,0 +1,109 @@
+:root {
+  /* 🎨 Colors */
+  --clr-bg-light: #f2f5f9;
+  --clr-bg-white: #ffffff;
+  --clr-text-dark: #111729;
+  --clr-text-muted: #4a5567;
+
+  /* 🔠 Font Families */
+  --font-body: "Lato", sans-serif;
+  --font-title: "Poppins", sans-serif;
+
+  /* 📏 Font Sizes (with rem equivalents) */
+  --tp-designation: 600 0.875rem/100% var(--font-body);
+  --tp-pfName: 800 1rem/100% var(--font-body);
+  --tp-des: 400 1rem/150% var(--font-body);
+  --tp-title: 500 1.5rem/150% var(--font-title);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font: var(--tp-title);
+  color: var(--clr-text-dark);
+  margin-bottom: 12px;
+}
+
+.description {
+  font: var(--tp-des);
+  color: var(--clr-text-muted);
+}
+
+h2 {
+  font: var(--tp-pfName);
+  color: var(--clr-text-dark);
+  margin-bottom: 6px;
+}
+
+.designation {
+  font: var(--tp-designation);
+  color: var(--clr-text-muted);
+  
+}
+
+.card-component {
+  max-width: 418px;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.hero-image {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.white-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* height: auto; */
+}
+
+main {
+  padding: 0 32px;
+  position: relative;
+  
+}
+
+header {
+  max-width: 354px;
+  margin: 0 auto;
+}
+
+.divider {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 1px; /* thickness of line */
+  background-color: #ccc;
+  margin-left: -2rem; /* negate main’s padding */
+  margin-right: -2rem;
+  width: calc(100% + 4rem); /* stretch back full */
+}
+.profile {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.profile-image {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+}
