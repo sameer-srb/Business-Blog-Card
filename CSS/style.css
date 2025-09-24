@@ -63,7 +63,6 @@ h2 {
   width: 100%;
   height: auto;
   background-color:var(--clr-bg-white);
-  border: 2px solid yellow;
 }
 
 .image-container {
@@ -88,7 +87,6 @@ main {
   padding: 0 2rem;
   position: relative;
   background-color:var(--clr-bg-white);
-  border: 2px solid green;
 }
 
 
